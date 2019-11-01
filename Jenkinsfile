@@ -12,6 +12,7 @@ pipeline {
             steps {
                 sh '''
 			 chmod +x ./jenkins -R
+			 chmod +x ./java-app -R
 			./jenkins/build/mvn.sh mvn -B -DskipTests clean package
 			./jenkins/build/build.sh
            
